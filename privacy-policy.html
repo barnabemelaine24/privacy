@@ -18,19 +18,21 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 14px;
       margin-bottom: 40px;
     }
     .logo-icon {
-      width: 48px;
-      height: 48px;
-      background: #E24B4A;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      overflow: hidden;
+      flex-shrink: 0;
     }
-    .logo-name { font-size: 20px; font-weight: 500; }
+    .logo-icon svg {
+      width: 56px;
+      height: 56px;
+    }
+    .logo-name { font-size: 22px; font-weight: 500; }
     .logo-name span { color: #E24B4A; }
     h1 { font-size: 28px; font-weight: 500; margin-bottom: 8px; }
     .date { color: #555555; font-size: 14px; margin-bottom: 40px; }
@@ -67,17 +69,19 @@
     }
     .contact p { margin-bottom: 4px; }
     footer { color: #333333; font-size: 12px; text-align: center; margin-top: 48px; }
+    strong { color: #ffffff; font-weight: 500; }
   </style>
 </head>
 <body>
 
   <div class="logo">
     <div class="logo-icon">
-      <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-        <circle cx="14" cy="14" r="10" fill="white" opacity="0.2"/>
-        <circle cx="14" cy="14" r="5" fill="#111111"/>
-        <circle cx="14" cy="14" r="2" fill="#E24B4A"/>
-        <circle cx="21" cy="7" r="3" fill="#E24B4A" stroke="#E24B4A" stroke-width="1"/>
+      <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 1024 1024" fill="none" aria-label="Action Replay logo">
+        <rect width="1024" height="1024" fill="#111111"/>
+        <circle cx="512" cy="512" r="352" fill="#E24B4A"/>
+        <circle cx="512" cy="512" r="152" fill="#111111"/>
+        <circle cx="512" cy="512" r="64" fill="#E24B4A"/>
+        <circle cx="768" cy="256" r="64" fill="#E24B4A" stroke="#111111" stroke-width="24"/>
       </svg>
     </div>
     <div class="logo-name">Action <span>Replay</span></div>
@@ -140,9 +144,9 @@
   <h2>5. Permissions requises</h2>
   <p>L'application demande les autorisations suivantes sur votre iPhone :</p>
   <ul>
-    <li><strong style="color:#ffffff;font-weight:500">Caméra</strong> — Pour enregistrer le buffer vidéo circulaire</li>
-    <li><strong style="color:#ffffff;font-weight:500">Microphone</strong> — Pour capturer le son lors des enregistrements</li>
-    <li><strong style="color:#ffffff;font-weight:500">Photos</strong> — Pour sauvegarder et afficher vos clips vidéo</li>
+    <li><strong>Caméra</strong> — Pour enregistrer le buffer vidéo circulaire</li>
+    <li><strong>Microphone</strong> — Pour capturer le son lors des enregistrements</li>
+    <li><strong>Photos</strong> — Pour sauvegarder et afficher vos clips vidéo</li>
   </ul>
   <p>Ces permissions sont utilisées exclusivement pour les fonctionnalités de l'application. Aucune donnée issue de la caméra, du micro ou de vos photos n'est transmise à nos serveurs.</p>
 
@@ -153,11 +157,11 @@
   <h2>7. Vos droits (RGPD)</h2>
   <p>Conformément au RGPD, vous disposez des droits suivants :</p>
   <ul>
-    <li><strong style="color:#ffffff;font-weight:500">Droit d'accès</strong> — Obtenir une copie de vos données personnelles</li>
-    <li><strong style="color:#ffffff;font-weight:500">Droit de rectification</strong> — Corriger des données inexactes</li>
-    <li><strong style="color:#ffffff;font-weight:500">Droit à l'effacement</strong> — Demander la suppression de vos données</li>
-    <li><strong style="color:#ffffff;font-weight:500">Droit à la portabilité</strong> — Recevoir vos données dans un format structuré</li>
-    <li><strong style="color:#ffffff;font-weight:500">Droit d'opposition</strong> — Vous opposer à certains traitements</li>
+    <li><strong>Droit d'accès</strong> — Obtenir une copie de vos données personnelles</li>
+    <li><strong>Droit de rectification</strong> — Corriger des données inexactes</li>
+    <li><strong>Droit à l'effacement</strong> — Demander la suppression de vos données</li>
+    <li><strong>Droit à la portabilité</strong> — Recevoir vos données dans un format structuré</li>
+    <li><strong>Droit d'opposition</strong> — Vous opposer à certains traitements</li>
   </ul>
   <p>Pour exercer ces droits, contactez-nous à l'adresse ci-dessous. Vous disposez également du droit d'introduire une réclamation auprès de la <a href="https://www.cnil.fr">CNIL</a>.</p>
 
